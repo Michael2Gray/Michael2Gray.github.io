@@ -1,0 +1,293 @@
+.view {
+  font-family: 'Raleway', sans-serif;
+  z-index: 1000;
+  margin-bottom: 314px; }
+
+header {
+  font-family: 'Raleway', sans-serif; }
+  header .navbar {
+    border: 0px solid;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26); }
+    header .navbar .navbar-header .navbar-icon {
+      margin-top: 30px; }
+    header .navbar .navbar-header #nav-toggle .active span {
+      background-color: transparent; }
+      header .navbar .navbar-header #nav-toggle .active span:before, header .navbar .navbar-header #nav-toggle .active span:after {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        top: 0; }
+      header .navbar .navbar-header #nav-toggle .active span:before {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
+    header .navbar .navbar-header #nav-toggle span {
+      border-radius: 1px;
+      height: 2px;
+      width: 30px;
+      background: #0e7ec1;
+      position: absolute;
+      display: block;
+      content: '';
+      -webkit-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out; }
+      header .navbar .navbar-header #nav-toggle span:before {
+        border-radius: 1px;
+        height: 2px;
+        width: 30px;
+        background: #0e7ec1;
+        position: absolute;
+        display: block;
+        content: '';
+        -webkit-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+        top: -7px; }
+      header .navbar .navbar-header #nav-toggle span:after {
+        border-radius: 1px;
+        height: 2px;
+        width: 30px;
+        background: #0e7ec1;
+        position: absolute;
+        display: block;
+        content: '';
+        -webkit-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+        bottom: -7px; }
+    header .navbar .navbar-header .navbar-brand {
+      height: 80px;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin-left: 0px; }
+    header .navbar .navbar-collapse ul.nav li {
+      height: 80px; }
+      header .navbar .navbar-collapse ul.nav li a {
+        line-height: 46px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #606061;
+        letter-spacing: 1px;
+        font-weight: 400;
+        height: 100%; }
+        header .navbar .navbar-collapse ul.nav li a.active, header .navbar .navbar-collapse ul.nav li a:hover, header .navbar .navbar-collapse ul.nav li a:focus {
+          background-color: #0e7ec1;
+          color: #FFFFFF; }
+    header .navbar .navbar-collapse ul.nav li a.active .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #0e7ec1;
+      font-size: 0;
+      bottom: -10px;
+      position: absolute;
+      left: calc(50% - 10px); }
+    header .navbar .navbar-collapse .navbar-right {
+      margin-right: 0px; }
+
+/* FOOTER */
+#footer {
+  background-color: #333;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  width: 100%; }
+
+footer {
+  color: #fff;
+  padding-bottom: 50px;
+  padding-top: 100px; }
+
+footer h4 {
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-bottom: 25px; }
+
+footer i {
+  font-size: 20px;
+  float: left; }
+
+footer a {
+  color: #fff;
+  letter-spacing: 3px;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
+
+footer a:hover, footer a:focus {
+  color: #0e7ec1;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
+
+footer p {
+  font-weight: 200;
+  letter-spacing: 3px;
+  color: white; }
+
+footer a.socialLink:hover, footer a.socialLink:focus {
+  color: white;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
+
+.social {
+  float: left;
+  border: 1px solid #fff;
+  margin: 5px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
+
+.social i {
+  font-size: 30px;
+  float: none;
+  line-height: 50px;
+  margin-left: 3px; }
+
+.social:hover i.twit, .social:focus i.twit {
+  color: #55ACEE; }
+
+.social:hover i.link, .social:focus i.link {
+  color: #0077B5;
+  -webkit-transition: all 0s ease;
+          transition: all 0s ease; }
+
+.social:hover, .social:focus {
+  background-color: #fff; }
+
+.highlight {
+  color: #0e7ec1 !important;
+  font-weight: 600;
+  letter-spacing: 3px; }
+
+#home-container {
+  font-family: 'Raleway', sans-serif; }
+  #home-container .slider-container {
+    width: 100%;
+    height: 100vh; }
+    #home-container .slider-container .slick-slider .slick-image {
+      width: 100%;
+      height: 100vh; }
+    #home-container .slider-container .slick-slider .slider-content {
+      position: absolute;
+      bottom: 45%;
+      width: 100%; }
+      #home-container .slider-container .slick-slider .slider-content h1 {
+        font-size: 45px;
+        color: #FFFFFF;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-bottom: 25px; }
+      #home-container .slider-container .slick-slider .slider-content a {
+        font-size: 25px;
+        font-weight: 300;
+        color: #0e7ec1;
+        padding: 10px 25px;
+        border-radius: 14px;
+        -webkit-transition: all linear 0.2s;
+                transition: all linear 0.2s;
+        border: 2px solid #0e7ec1;
+        background-color: transparent; }
+        #home-container .slider-container .slick-slider .slider-content a:hover, #home-container .slider-container .slick-slider .slider-content a:focus, #home-container .slider-container .slick-slider .slider-content a:active {
+          color: #f2f2f2;
+          background-color: #0e7ec1;
+          border: 2px solid transparent;
+          text-decoration: none; }
+    #home-container .slider-container .slick-slider .slick-dots {
+      bottom: 0px; }
+      #home-container .slider-container .slick-slider .slick-dots li button:before {
+        color: #fff;
+        font-size: 10px; }
+      #home-container .slider-container .slick-slider .slick-dots li.slick-active button:before {
+        opacity: 1; }
+  #home-container .offer, #home-container .brands, #home-container .explore {
+    padding: 20px 0px; }
+  #home-container .offer {
+    color: #f2f2f2;
+    font-size: 16px;
+    width: 100%;
+    background: url("../build/images/tire-pattern.png") repeat; }
+    #home-container .offer section header center .heading {
+      margin-bottom: 15px; }
+      #home-container .offer section header center .heading h2 {
+        color: #fff;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 0px; }
+      #home-container .offer section header center .heading .underline {
+        height: 2px;
+        width: 45px;
+        background-color: #0e7ec1;
+        display: inline-block;
+        content: '';
+        margin: 0 10px; }
+    #home-container .offer section img.cytech {
+      margin-top: 30px; }
+    #home-container .offer section a.highlight {
+      color: #0e7ec1; }
+    #home-container .offer section p.shout {
+      font-size: 30px;
+      font-weight: 200; }
+      #home-container .offer section p.shout span.free {
+        font-size: 40px;
+        color: #0e7ec1;
+        text-transform: uppercase; }
+    #home-container .offer section a.email {
+      font-size: 25px;
+      font-weight: 300;
+      padding: 10px 25px;
+      border-radius: 14px;
+      -webkit-transition: all linear 0.2s;
+              transition: all linear 0.2s;
+      color: #0e7ec1;
+      border: 2px solid #0e7ec1;
+      background-color: transparent;
+      text-transform: uppercase;
+      width: 100%;
+      margin: 15px 0px;
+      display: block; }
+      #home-container .offer section a.email:hover, #home-container .offer section a.email:focus, #home-container .offer section a.email:active {
+        color: #f2f2f2;
+        background-color: #0e7ec1;
+        border: 2px solid transparent;
+        text-decoration: none; }
+  #home-container .brands .brands-background {
+    background: url("../build/images/Wolfe-Cycles-Bike-Roads.jpg");
+    width: 100%;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 450px;
+    position: relative; }
+  #home-container .brands, #home-container .explore {
+    background-color: #f2f2f2;
+    color: #303030;
+    font-size: 16px; }
+    #home-container .brands section header center .heading, #home-container .explore section header center .heading {
+      margin-bottom: 15px; }
+      #home-container .brands section header center .heading h2, #home-container .explore section header center .heading h2 {
+        color: #303030;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 0px; }
+      #home-container .brands section header center .heading .underline, #home-container .explore section header center .heading .underline {
+        height: 2px;
+        width: 45px;
+        background-color: #0e7ec1;
+        display: inline-block;
+        content: '';
+        margin: 0 10px; }
+    #home-container .brands section .embed-container, #home-container .explore section .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%; }
+      #home-container .brands section .embed-container iframe, #home-container .brands section .embed-container object, #home-container .brands section .embed-container embed, #home-container .explore section .embed-container iframe, #home-container .explore section .embed-container object, #home-container .explore section .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }

@@ -1,0 +1,28 @@
+<header ng-controller="NavigationCtrl">
+	<nav role="navigation" class="navbar navbar-fixed-top nav-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="navbar-header">
+						<button id="nav-toggle" ng-click="burgerClick()" type="button" class="navbar-toggle navbar-icon" data-toggle="collapse" ng-class="{active: showNav}" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle Navigation</span>
+							<span></span>
+						</button>
+						<a href="index.html" class="navbar-brand img-responsive"><center><img src="build/images/wolfe-cycles-logo.png" alt="Wolfe Cycles"/></center></a>
+					</div>
+					<div class="navbar-collapse collapse" data-toggle="collapse" data-target="nav-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a ui-sref="home.page" ng-class="{active: isActive('/home')}">Home
+							<div class="arrow-down"></div></a></li>
+							<li><a ui-sref="about.page" ng-class="{active: isActive('/about')}">About<div class="arrow-down"></div></a></li>
+							<li><a ui-sref="services.page" ng-class="{active: isActive('/services')}">Services<div class="arrow-down"></div></a></li>
+							<li><a ui-sref="cycleToWork.page" ng-class="{active: isActive('/cycle-to-work')}">Cycle To Work<div class="arrow-down"></div></a></li>
+							<li><a ui-sref="brands.page" ng-class="{active: isActive('/brands')}">Brands<div class="arrow-down"></div></a></li>
+							<li><a ui-sref="contact.page" ng-class="{active: isActive('/contact')}">Contact<div class="arrow-down"></div></a></li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</nav>
+</header>
