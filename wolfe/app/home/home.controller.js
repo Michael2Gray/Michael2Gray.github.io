@@ -20,7 +20,7 @@
 			infinite: true,
     		slidesToScroll: 1,
 			autoplay: true,
-			autoplaySpeed: 3500,
+			autoplaySpeed: 4500,
     		draggable: false,
     		adaptiveHeight: true,
     		arrows: false,
