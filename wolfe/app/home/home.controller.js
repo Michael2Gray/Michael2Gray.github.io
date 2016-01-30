@@ -45,7 +45,7 @@
 					'linkText': 'Need a Service?'
 				}, {
 					'title': 'Located in the Heart of Kimmage',
-					'src': '../build/images/Wolfe-Cycles-Dublin-Shop.jpg',
+					'src': 'build/images/Wolfe-Cycles-Dublin-Shop.jpg',
 					'link': '/contact',
 					'linkText': 'Visit Us Today'
 				}
