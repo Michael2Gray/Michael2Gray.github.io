@@ -1,0 +1,86 @@
+/* FOOTER */
+#footer {
+	background-color: #333;
+	//background: url(build/images/footer.jpg);
+	background-size: cover;
+	position: fixed;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+footer {
+	color: #fff;
+	padding-bottom: 50px;
+	padding-top: 100px;
+}
+
+footer h4 {
+	color: #fff;
+	font-weight: 200;
+	letter-spacing: 1px;
+	margin-bottom: 25px;
+}
+
+footer i{
+	font-size: 20px;
+	float: left;
+}
+
+footer a {
+	color: #fff;
+	letter-spacing: 3px;
+	transition: all 0.2s ease;
+}
+
+footer a:hover, footer a:focus {
+	color: #0e7ec1;
+	transition: all 0.2s ease;
+}
+
+footer p {
+	font-weight: 200;
+	letter-spacing: 3px;
+	color: white;
+}
+
+footer a.socialLink:hover, footer a.socialLink:focus {
+	color: white;
+	transition: all 0.2s ease;
+}
+
+.social{
+	float: left;
+	border: 1px solid #fff;
+	margin: 5px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	transition: all 0.2s ease;
+}
+
+.social i {
+	font-size: 30px;
+	float: none;
+	line-height: 50px;
+	margin-left: 3px;
+}
+
+.social:hover i.twit, .social:focus i.twit {
+	color: #55ACEE;
+}
+.social:hover i.link, .social:focus i.link {
+	color: #0077B5;
+	transition: all 0s ease;
+}
+
+.social:hover, .social:focus {
+	background-color: #fff;
+}
+
+.highlight {
+	color: #0e7ec1 !important;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
