@@ -2,6 +2,7 @@
 	'use strict';
 	angular.module('wolfe', [
 		// External Dependencies
+		'ui.router',
 		'slickCarousel',
 		'angular-parallax',
 		'ngAnimate',
