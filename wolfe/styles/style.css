@@ -265,13 +265,10 @@ footer a.socialLink:hover, footer a.socialLink:focus {
         border: 2px solid transparent;
         text-decoration: none; }
   #home-container .brands .brands-background {
-    background: url("../build/images/Wolfe-Cycles-Bike-Roads.jpg");
     width: 100%;
-    background-attachment: fixed;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
     height: 450px;
-    position: relative; }
+    background: url("../build/images/Wolfe-Cycles-Bike-Roads.jpg") no-repeat center center fixed;
+    background-size: cover; }
   #home-container .brands, #home-container .explore {
     background-color: #f2f2f2;
     color: #303030;
