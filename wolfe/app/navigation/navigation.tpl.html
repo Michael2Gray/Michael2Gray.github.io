@@ -1,0 +1,26 @@
+<header ng-controller="NavigationCtrl">
+	<nav id="access" role="navigation" class="navbar navbar-fixed-top nav-container">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button id="nav-toggle" type="button" class="navbar-toggle navbar-icon" ng-class="{active: showNav}" ng-click="toggleNav()">
+					<span class="sr-only">Toggle Navigation</span>
+					<span></span>
+				</button>
+				<a href='#/home/' class="navbar-brand"><img src="build/images/wolfe-cycles-logo.png" alt="Wolfe Cycles"/></a>
+			</div>
+
+			<div class="collapse navbar-collapse" ng-class="showNav && 'in'">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/home/" ng-click="toggleNav()" ng-class="{active: isActive('/home')}">Home
+					<div class="arrow-down"></div></a></li>
+					<li><a href="#/about/" ng-click="toggleNav()" ng-class="{active: isActive('/about')}">About<div class="arrow-down"></div></a></li>
+					<li><a href="#/services/" ng-click="toggleNav()" ng-class="{active: isActive('/services')}">Services<div class="arrow-down"></div></a></li>
+					<li><a href="#/cycle-to-work/" ng-click="toggleNav()" ng-class="{active: isActive('/cycle-to-work')}">Cycle To Work<div class="arrow-down"></div></a></li>
+					<li><a href="#/brands/" ng-click="toggleNav()" ng-class="{active: isActive('/brands')}">Brands<div class="arrow-down"></div></a></li>
+					<li><a href="#/contact/" ng-click="toggleNav()" ng-class="{active: isActive('/contact')}">Contact<div class="arrow-down"></div></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
