@@ -39,27 +39,27 @@
 	.config(function ($routeProvider){
 		$routeProvider.
 			when('/about', {
-				templateUrl: '/app/about/about.tpl.html',
+				templateUrl: 'app/about/about.tpl.html',
 				controller: 'AboutCtrl'
 			}).
 			when('/brands', {
-				templateUrl: '/app/brands/brands.tpl.html',
+				templateUrl: 'app/brands/brands.tpl.html',
 				controller: 'BrandsCtrl'
 			}).
 			when('/contact', {
-				templateUrl: '/app/contact/contact.tpl.html',
+				templateUrl: 'app/contact/contact.tpl.html',
 				controller: 'ContactCtrl'
 			}).
 			when('/cycle-to-work', {
-				templateUrl: '/app/cycleToWork/cycleToWork.tpl.html',
+				templateUrl: 'app/cycleToWork/cycleToWork.tpl.html',
 				controller: 'CycleToWorkCtrl'
 			}).
 			when('/home', {
-				templateUrl: '/app/home/home.tpl.html',
+				templateUrl: 'app/home/home.tpl.html',
 				controller: 'HomeCtrl'
 			}).
 			when('/services', {
-				templateUrl: '/app/services/services.tpl.html',
+				templateUrl: 'app/services/services.tpl.html',
 				controller: 'ServicesCtrl'
 			}).
 			otherwise({
