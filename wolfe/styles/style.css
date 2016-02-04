@@ -1,13 +1,21 @@
 .view {
   font-family: 'Raleway', sans-serif;
   z-index: 1000;
-  margin-bottom: 314px; }
+  margin-bottom: 274px; }
+  .view h1, .view h2, .view h3, .view h4, .view h5 {
+    letter-spacing: 1.5px; }
+  .view p, .view a {
+    letter-spacing: 1px;
+    font-size: 16px; }
+  @media screen and (max-width: 746px) {
+    .view {
+      margin-bottom: 375px; } }
 
 header {
   font-family: 'Raleway', sans-serif; }
   header .navbar {
     border: 0px solid;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26); }
     header .navbar .navbar-header .navbar-icon {
       margin-top: 30px;
@@ -55,8 +63,14 @@ header {
         -webkit-transition: all 0.2s ease-in-out;
                 transition: all 0.2s ease-in-out;
         bottom: -7px; }
+    @media screen and (max-width: 1200px) {
+      header .navbar .navbar-header #nav-toggle {
+        display: block; } }
     header .navbar .navbar-header .navbar-brand {
       height: 80px; }
+    @media screen and (max-width: 1200px) {
+      header .navbar .navbar-header {
+        float: none; } }
     header .navbar .navbar-collapse ul.nav li {
       height: 80px; }
       header .navbar .navbar-collapse ul.nav li a {
@@ -92,86 +106,87 @@ header {
       transition: max-height .3s ease; }
       header .navbar .navbar-collapse.collapse ul.nav li a {
         text-align: center; }
+      @media screen and (max-width: 1200px) {
+        header .navbar .navbar-collapse.collapse ul.nav li {
+          float: none; } }
+      @media screen and (max-width: 1200px) {
+        header .navbar .navbar-collapse.collapse ul.nav {
+          float: none !important;
+          margin: 7.5px -15px; } }
+      @media screen and (max-width: 1200px) {
+        header .navbar .navbar-collapse.collapse {
+          display: none !important; } }
     header .navbar .navbar-collapse.collapse.in {
       max-height: 2000px; }
+      @media screen and (max-width: 1200px) {
+        header .navbar .navbar-collapse.collapse.in {
+          display: block !important; } }
+    @media screen and (max-width: 1200px) {
+      header .navbar .collapsing {
+        overflow: hidden !important; } }
 
 /* FOOTER */
 #footer {
+  font-family: 'Raleway', sans-serif;
   background-color: #333;
+  background: url("../build/images/footer.jpg");
   background-size: cover;
   position: fixed;
   bottom: 0;
   z-index: -1;
   width: 100%; }
-
-footer {
-  color: #fff;
-  padding-bottom: 50px;
-  padding-top: 100px; }
-
-footer h4 {
-  color: #fff;
-  font-weight: 200;
-  letter-spacing: 1px;
-  margin-bottom: 25px; }
-
-footer i {
-  font-size: 20px;
-  float: left; }
-
-footer a {
-  color: #fff;
-  letter-spacing: 3px;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
-
-footer a:hover, footer a:focus {
-  color: #0e7ec1;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
-
-footer p {
-  font-weight: 200;
-  letter-spacing: 3px;
-  color: white; }
-
-footer a.socialLink:hover, footer a.socialLink:focus {
-  color: white;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
-
-.social {
-  float: left;
-  border: 1px solid #fff;
-  margin: 5px;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
-
-.social i {
-  font-size: 30px;
-  float: none;
-  line-height: 50px;
-  margin-left: 3px; }
-
-.social:hover i.twit, .social:focus i.twit {
-  color: #55ACEE; }
-
-.social:hover i.link, .social:focus i.link {
-  color: #0077B5;
-  -webkit-transition: all 0s ease;
-          transition: all 0s ease; }
-
-.social:hover, .social:focus {
-  background-color: #fff; }
-
-.highlight {
-  color: #0e7ec1 !important;
-  font-weight: 600;
-  letter-spacing: 3px; }
+  #footer footer {
+    color: #fff;
+    padding-bottom: 50px;
+    padding-top: 100px; }
+    #footer footer h4 {
+      color: #fff;
+      font-weight: 200;
+      letter-spacing: 1px;
+      margin-bottom: 25px; }
+    #footer footer i {
+      font-size: 20px;
+      float: left; }
+    #footer footer a {
+      color: #fff;
+      letter-spacing: 3px;
+      -webkit-transition: all linear 0.2s;
+              transition: all linear 0.2s;
+      text-decoration: none; }
+      #footer footer a:hover, #footer footer a:focus {
+        color: #0e7ec1;
+        -webkit-transition: all linear 0.2s;
+                transition: all linear 0.2s;
+        text-decoration: none; }
+      #footer footer a.socialLink:hover, #footer footer a.socialLink:focus {
+        color: #FFFFFF;
+        -webkit-transition: all linear 0.2s;
+                transition: all linear 0.2s; }
+      #footer footer a .social {
+        float: left;
+        border: 1px solid #fff;
+        margin: 5px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease; }
+        #footer footer a .social i {
+          font-size: 30px;
+          float: none;
+          line-height: 50px;
+          margin-left: 3px; }
+        #footer footer a .social:hover, #footer footer a .social:focus {
+          background-color: #fff; }
+          #footer footer a .social:hover i.twit, #footer footer a .social:focus i.twit {
+            color: #55ACEE; }
+          #footer footer a .social:hover i.fb, #footer footer a .social:focus i.fb {
+            color: #43609C; }
+    #footer footer p {
+      font-weight: 200;
+      letter-spacing: 3px;
+      color: white; }
 
 #home-container {
   font-family: 'Raleway', sans-serif; }
@@ -191,6 +206,9 @@ footer a.socialLink:hover, footer a.socialLink:focus {
         font-weight: 200;
         text-transform: uppercase;
         margin-bottom: 25px; }
+        @media screen and (max-width: 746px) {
+          #home-container .slider-container .slick-slider .slider-content h1 {
+            font-size: 32px; } }
       #home-container .slider-container .slick-slider .slider-content a {
         font-size: 25px;
         font-weight: 300;
@@ -213,7 +231,7 @@ footer a.socialLink:hover, footer a.socialLink:focus {
         font-size: 10px; }
       #home-container .slider-container .slick-slider .slick-dots li.slick-active button:before {
         opacity: 1; }
-  #home-container .offer, #home-container .brands, #home-container .explore {
+  #home-container .offer, #home-container .explore {
     padding: 20px 0px; }
   #home-container .offer {
     color: #f2f2f2;
@@ -235,7 +253,8 @@ footer a.socialLink:hover, footer a.socialLink:focus {
         content: '';
         margin: 0 10px; }
     #home-container .offer section img.cytech {
-      margin-top: 30px; }
+      margin-top: 58px;
+      margin-bottom: 58px; }
     #home-container .offer section a.highlight {
       color: #0e7ec1; }
     #home-container .offer section p.shout {
@@ -264,11 +283,25 @@ footer a.socialLink:hover, footer a.socialLink:focus {
         background-color: #0e7ec1;
         border: 2px solid transparent;
         text-decoration: none; }
-  #home-container .brands .brands-background {
-    width: 100%;
-    height: 450px;
-    background: url("../build/images/Wolfe-Cycles-Bike-Roads.jpg") no-repeat center center fixed;
-    background-size: cover; }
+  #home-container .brands {
+    height: 560px;
+    padding-bottom: 20px; }
+    #home-container .brands .brands-background {
+      background-image: url("../build/images/Wolfe-Cycles-Bike-Roads.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: top;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      height: 100%;
+      width: 100%;
+      background-position: center center;
+      background-repeat: no-repeat; }
+    #home-container .brands .brands-content {
+      background-color: #FFFFFF;
+      padding-top: 20px; }
   #home-container .brands, #home-container .explore {
     background-color: #f2f2f2;
     color: #303030;
@@ -299,3 +332,181 @@ footer a.socialLink:hover, footer a.socialLink:focus {
         left: 0;
         width: 100%;
         height: 100%; }
+
+#about-container {
+  margin-top: 80px;
+  font-family: 'Raleway', sans-serif; }
+  #about-container .welcome {
+    color: #f2f2f2;
+    font-size: 16px;
+    width: 100%;
+    background: url("../build/images/tire-pattern.png") repeat;
+    padding: 25px 0px; }
+    #about-container .welcome section {
+      padding: 15px 0px; }
+      #about-container .welcome section header center .heading {
+        margin-bottom: 15px; }
+        #about-container .welcome section header center .heading h2 {
+          color: #fff;
+          font-weight: 300;
+          text-transform: uppercase;
+          margin-bottom: 0px; }
+        #about-container .welcome section header center .heading .underline {
+          height: 2px;
+          width: 45px;
+          background-color: #0e7ec1;
+          display: inline-block;
+          content: '';
+          margin: 0 10px; }
+      #about-container .welcome section a.highlight {
+        color: #0e7ec1; }
+  #about-container .images {
+    background-color: #F2F2F2;
+    padding: 25px 0px; }
+    #about-container .images .card {
+      padding: 15px; }
+      #about-container .images .card center {
+        position: relative;
+        display: block;
+        overflow: hidden; }
+        #about-container .images .card center img {
+          width: 100%;
+          max-height: 250px;
+          min-height: 250px;
+          -webkit-transition: all linear 0.2s;
+                  transition: all linear 0.2s; }
+        #about-container .images .card center .overlay {
+          background-color: rgba(0, 0, 0, 0.7);
+          position: absolute;
+          bottom: -221px;
+          color: #fff;
+          width: 100%;
+          -webkit-transition: all linear 0.2s;
+                  transition: all linear 0.2s; }
+          #about-container .images .card center .overlay .card-content {
+            padding: 20px 40px;
+            margin-bottom: 15px; }
+            #about-container .images .card center .overlay .card-content h3 {
+              color: #0e7ec1;
+              text-transform: uppercase;
+              font-weight: 400; }
+      #about-container .images .card:hover img, #about-container .images .card:focus img {
+        -webkit-transform: scale3d(1.02, 1.02, 1);
+        transform: scale3d(1.02, 1.02, 1);
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        -webkit-transition: all linear 0.2s;
+                transition: all linear 0.2s; }
+      #about-container .images .card:hover .overlay, #about-container .images .card:focus .overlay {
+        bottom: 0; }
+    @media screen and (max-width: 768px) {
+      #about-container .images center .overlay {
+        bottom: 0 !important; } }
+  #about-container .womens-cycling {
+    background-color: #ffffff;
+    color: #303030;
+    font-size: 16px;
+    padding: 25px 0px; }
+    #about-container .womens-cycling section {
+      padding: 15px 0px; }
+      #about-container .womens-cycling section header center .heading {
+        margin-bottom: 15px; }
+        #about-container .womens-cycling section header center .heading h2 {
+          font-weight: 300;
+          text-transform: uppercase;
+          margin-bottom: 0px; }
+        #about-container .womens-cycling section header center .heading .underline {
+          height: 2px;
+          width: 45px;
+          background-color: #0e7ec1;
+          display: inline-block;
+          content: '';
+          margin: 0 10px; }
+      #about-container .womens-cycling section a.highlight {
+        color: #0e7ec1; }
+
+#services-container {
+  margin-top: 80px;
+  font-family: 'Raleway', sans-serif; }
+  #services-container .header-section {
+    color: #f2f2f2;
+    font-size: 16px;
+    width: 100%;
+    background: url("../build/images/tire-pattern.png") repeat;
+    padding: 25px 0px; }
+    #services-container .header-section section {
+      padding: 15px 0px; }
+      #services-container .header-section section header center .heading {
+        margin-bottom: 15px; }
+        #services-container .header-section section header center .heading h2 {
+          color: #fff;
+          font-weight: 300;
+          text-transform: uppercase;
+          margin-bottom: 0px; }
+        #services-container .header-section section header center .heading .underline {
+          height: 2px;
+          width: 45px;
+          background-color: #0e7ec1;
+          display: inline-block;
+          content: '';
+          margin: 0 10px; }
+      #services-container .header-section section .content .highlight {
+        color: #0e7ec1;
+        text-transform: uppercase; }
+  #services-container .types {
+    background-color: #ffffff;
+    color: #303030;
+    font-size: 16px;
+    padding: 25px 0px; }
+    #services-container .types section {
+      padding: 15px 0px; }
+      #services-container .types section h3 {
+        font-weight: 400;
+        text-transform: uppercase;
+        border-bottom: 1px solid #0e7ec1; }
+      #services-container .types section img {
+        margin: 15px auto;
+        width: 100%;
+        max-height: 250px;
+        min-height: 250px; }
+  #services-container .cytech {
+    background-color: #f2f2f2;
+    color: #303030;
+    padding: 25px 0px; }
+    #services-container .cytech section {
+      padding: 15px 0px; }
+      #services-container .cytech section header center .heading {
+        margin-bottom: 15px; }
+        #services-container .cytech section header center .heading h2 {
+          color: #303030;
+          font-weight: 300;
+          text-transform: uppercase;
+          margin-bottom: 0px; }
+        #services-container .cytech section header center .heading .underline {
+          height: 2px;
+          width: 45px;
+          background-color: #0e7ec1;
+          display: inline-block;
+          content: '';
+          margin: 0 10px; }
+    #services-container .cytech .cytech-info img {
+      width: 300px;
+      margin: 30px 0px; }
+    #services-container .cytech .services {
+      margin: 15px 0px; }
+      #services-container .cytech .services h3 {
+        font-weight: 300; }
+      #services-container .cytech .services .service {
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #0e7ec1;
+        padding: 10px 25px;
+        border-radius: 14px;
+        border: 2px solid #0e7ec1;
+        background-color: transparent;
+        display: inline-block;
+        margin: 5px; }
+        #services-container .cytech .services .service h3 {
+          font-size: 18px;
+          margin: 6px 0;
+          font-weight: 400; }

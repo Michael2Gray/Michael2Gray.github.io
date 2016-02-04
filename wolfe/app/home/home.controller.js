@@ -20,7 +20,7 @@
 			infinite: true,
     		slidesToScroll: 1,
 			autoplay: true,
-			autoplaySpeed: 3500,
+			autoplaySpeed: 4000,
     		draggable: false,
     		adaptiveHeight: true,
     		arrows: false,
@@ -37,17 +37,17 @@
 			$scope.slideImages = [
 				{
 					'title': 'BH Road Bikes',
-					'src': 'build/images/Wolfe-Cycles-BH-Bike-Dark.jpg',
+					'src': 'build/images/slider/Wolfe-Cycles-BH-Bike-Dark.jpg',
 					'link': '#/brands/',
 					'linkText': 'In Store Now'
 				}, {
 					'title': 'All Your Accessory Needs',
-					'src': 'build/images/Wolfe-Cycles-Accessories.jpg',
+					'src': 'build/images/slider/wolfe-cycles-accessories-dark.jpg',
 					'link': '#/services/',
 					'linkText': 'Need a Service?'
 				}, {
 					'title': 'Located in the Heart of Kimmage',
-					'src': 'build/images/Wolfe-Cycles-Dublin-Shop.JPG',
+					'src': 'build/images/slider/Wolfe-Cycles-Dublin-Shop-Dark.JPG',
 					'link': '#/contact/',
 					'linkText': 'Visit Us Today'
 				}
