@@ -39,11 +39,11 @@
 	.config(function ($routeProvider){
 		$routeProvider.
 			when('/about', {
-				templateUrl: './wolfe/app/about/about.tpl.html',
+				templateUrl: '/wolfe/app/about/about.tpl.html',
 				controller: 'AboutCtrl'
 			}).
 			when('/brands', {
-				templateUrl: './wolfe/app/brands/brands.tpl.html',
+				templateUrl: '/wolfe/app/brands/brands.tpl.html',
 				controller: 'BrandsCtrl'
 			}).
 			when('/contact', {
@@ -51,15 +51,15 @@
 				controller: 'ContactCtrl'
 			}).
 			when('/cycle-to-work', {
-				templateUrl: './wolfe/app/cycleToWork/cycleToWork.tpl.html',
+				templateUrl: '/wolfe/app/cycleToWork/cycleToWork.tpl.html',
 				controller: 'CycleToWorkCtrl'
 			}).
 			when('/home', {
-				templateUrl: './wolfe/app/home/home.tpl.html',
+				templateUrl: '/wolfe/app/home/home.tpl.html',
 				controller: 'HomeCtrl'
 			}).
 			when('/services', {
-				templateUrl: './wolfe/app/services/services.tpl.html',
+				templateUrl: '/wolfe/app/services/services.tpl.html',
 				controller: 'ServicesCtrl'
 			}).
 			otherwise({
