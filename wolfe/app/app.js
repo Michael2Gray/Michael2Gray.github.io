@@ -47,7 +47,7 @@
 				controller: 'BrandsCtrl'
 			}).
 			when('/contact', {
-				templateUrl: './wolfe/app/contact/contact.tpl.html',
+				templateUrl: '/wolfe/app/contact/contact.tpl.html',
 				controller: 'ContactCtrl'
 			}).
 			when('/cycle-to-work', {
