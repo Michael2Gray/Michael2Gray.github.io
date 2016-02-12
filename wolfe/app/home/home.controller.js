@@ -20,14 +20,15 @@
 			infinite: true,
     		slidesToScroll: 1,
 			autoplay: true,
-			autoplaySpeed: 4000,
+			autoplaySpeed: 3000,
     		draggable: false,
     		adaptiveHeight: true,
     		arrows: false,
     		dots: true,
     		fade: true,
     		adaptiveHeight: true,
-    		focusOnSelect: false
+    		focusOnSelect: false,
+    		pauseOnHover: false
 		};
 
 		/**
@@ -36,7 +37,7 @@
 		$scope.preloadImages = function() {
 			$scope.slideImages = [
 				{
-					'title': 'BH Road Bikes',
+					'title': 'Road Bikes',
 					'src': 'build/images/slider/Wolfe-Cycles-BH-Bike-Dark.jpg',
 					'link': '#/brands/',
 					'linkText': 'In Store Now'
