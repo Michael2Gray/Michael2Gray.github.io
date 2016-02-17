@@ -8,6 +8,7 @@
 		'ngAnimate',
 		'ui.bootstrap',
 		'ngRoute',
+		'ezfb',
 
 		//Internal Dependencies
 		'wolfe.navigation',
@@ -36,7 +37,7 @@
 			$state.previousParams = fromParams;
 		});
 	}])
-	.config(function ($routeProvider){
+	.config(function ($routeProvider, ezfbProvider){
 		$routeProvider.
 			when('/about', {
 				templateUrl: '/wolfe/app/about/about.tpl.html',
@@ -65,6 +66,12 @@
 			otherwise({
 				redirectTo: '/home'
 			});
+
+		ezfbProvider.setInitParams({
+			appId      : '179829562386996',
+      		xfbml      : true,
+      		version    : 'v2.5'
+		});
 	})
 	;
 })(window, window.$, window.angular);
