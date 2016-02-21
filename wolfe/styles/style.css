@@ -632,15 +632,9 @@ header {
     padding: 25px 0px;
     background-color: #fff; }
     #brands-container .brands-info .brand-example {
-      float: left;
-      display: inline-block;
-      margin: 15px; }
+      margin: 15px 0px; }
       #brands-container .brands-info .brand-example img {
         max-height: 300px; }
-    #brands-container .brands-info .brand-example-alt {
-      margin: 15px; }
-      #brands-container .brands-info .brand-example-alt img {
-        max-height: 400px; }
 
 #cycleToWork-container {
   margin-top: 80px;
