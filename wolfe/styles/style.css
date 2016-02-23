@@ -317,12 +317,7 @@ header {
           background: #fff; }
           #home-container .brands .brands-background .brand {
             max-height: 180px;
-            width: calc(50% - 4px);
-            position: relative; }
-            #home-container .brands .brands-background .brand img {
-              position: absolute;
-              top: 0;
-              left: 0; } }
+            line-height: 150px; } }
     #home-container .brands .brands-content {
       background-color: #FFFFFF;
       padding-top: 20px; }
